@@ -1,13 +1,29 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Header from "@/components/landing/Header";
+import HeroSection from "@/components/landing/HeroSection";
+import ContrastSection from "@/components/landing/ContrastSection";
+import DifferentialsSection from "@/components/landing/DifferentialsSection";
+import ScarcitySection from "@/components/landing/ScarcitySection";
+import AboutSection from "@/components/landing/AboutSection";
+import ScheduleSection from "@/components/landing/ScheduleSection";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <>
+      <Header />
+      <main>
+        <HeroSection />
+        <ContrastSection />
+        <DifferentialsSection />
+        <ScarcitySection />
+        <AboutSection />
+        <ScheduleSection />
+      </main>
+      <footer className="py-6 text-center border-t border-border">
+        <p className="text-xs font-body text-muted-foreground">
+          © {new Date().getFullYear()} OFIR Imobi PB. Todos os direitos reservados.
+        </p>
+      </footer>
+    </>
   );
 };
 
