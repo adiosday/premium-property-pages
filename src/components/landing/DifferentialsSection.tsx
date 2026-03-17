@@ -2,7 +2,7 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Maximize2, LayoutGrid, MapPin, Key, X, ChevronLeft, ChevronRight } from "lucide-react";
 import { useState } from "react";
 import fck24 from "@/assets/fck-24.jpg";
-import fck56 from "@/assets/fck-56.jpg";
+import fck55 from "@/assets/fck-55.jpg";
 import fck57 from "@/assets/fck-57.jpg";
 import fck58 from "@/assets/fck-58.jpg";
 import fck65 from "@/assets/fck-65.jpg";
@@ -17,7 +17,7 @@ const differentials = [
 
 const galleryImages = [
   { src: fck24, alt: "Piscina casa duplex Ponta de Campina - alto padrão PB" },
-  { src: fck56, alt: "Sala de estar casa duplex 3 quartos - pronto para morar" },
+  { src: fck55, alt: "Sala de estar casa duplex 3 quartos - pronto para morar" },
   { src: fck57, alt: "Living room alto padrão PB - 100m do mar" },
   { src: fck58, alt: "Sala de jantar casa duplex Ponta de Campina" },
   { src: fck65, alt: "Quarto e banheiro alto padrão - vizinho ao Lovina" },
