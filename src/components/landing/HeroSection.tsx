@@ -49,28 +49,28 @@ const HeroSection = () => {
       ))}
 
       {/* Content */}
-      <div className="relative z-10 container text-center px-6 pt-20">
+      <div className="relative z-10 container text-center px-4 sm:px-6 pt-16 sm:pt-20">
         <h1
           key={`h1-${current}`}
-          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-bold text-background leading-tight mb-4 md:mb-6 animate-section-in"
+          className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-display font-bold text-background leading-tight mb-3 sm:mb-4 md:mb-6 animate-section-in"
         >
           {slides[current].headline}
         </h1>
         <h2
           key={`h2-${current}`}
-          className="text-lg sm:text-xl md:text-2xl font-body font-light text-background/90 mb-8 md:mb-10 max-w-2xl mx-auto animate-section-in animate-stagger-1"
+          className="text-base sm:text-lg md:text-2xl font-body font-light text-background/90 mb-6 sm:mb-8 md:mb-10 max-w-2xl mx-auto animate-section-in animate-stagger-1"
         >
           {slides[current].subheadline}
         </h2>
         <Button
           variant="cta"
-          size="xl"
+          size="lg"
           onClick={scrollToAgendamento}
-          className="animate-section-in animate-stagger-2 mb-4"
+          className="animate-section-in animate-stagger-2 mb-3 sm:mb-4 text-xs sm:text-sm md:text-base px-6 sm:px-8"
         >
           AGENDAR VISITA À CASA DECORADA
         </Button>
-        <p className="text-sm text-background/70 font-body animate-section-in animate-stagger-3">
+        <p className="text-xs sm:text-sm text-background/70 font-body animate-section-in animate-stagger-3">
           Poucas unidades disponíveis. Atendimento exclusivo OFIR Imobi PB.
         </p>
       </div>

@@ -4,8 +4,8 @@ const ScarcitySection = () => {
   const { ref, isVisible } = useScrollAnimation();
 
   return (
-    <section ref={ref} className="py-20 md:py-28 section-mist">
-      <div className="container max-w-3xl text-center">
+    <section ref={ref} className="py-14 sm:py-20 md:py-28 section-mist">
+      <div className="container px-4 sm:px-6 max-w-3xl text-center">
         {/* Badge */}
         <div className={`inline-block gold-badge px-6 py-2 rounded-full text-sm font-body font-bold tracking-widest uppercase mb-8 ${isVisible ? "animate-section-in" : "opacity-0"}`}>
           ÚLTIMAS UNIDADES
@@ -30,7 +30,7 @@ const ScarcitySection = () => {
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
             title="Localização Breeze FCK Residence - Ponta de Campina"
-            className="w-full h-64 md:h-80"
+            className="w-full h-48 sm:h-64 md:h-80"
           />
         </div>
       </div>
