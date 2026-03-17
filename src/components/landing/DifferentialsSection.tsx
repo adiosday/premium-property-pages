@@ -17,7 +17,7 @@ const differentials = [
 
 const galleryImages = [
   { src: fck24, alt: "Piscina casa duplex Ponta de Campina - alto padrão PB" },
-  { src: fck56, alt: "Sala de estar casa duplex 3 quartos - pronto para morar" },
+  { src: fck55, alt: "Sala de estar casa duplex 3 quartos - pronto para morar" },
   { src: fck57, alt: "Living room alto padrão PB - 100m do mar" },
   { src: fck58, alt: "Sala de jantar casa duplex Ponta de Campina" },
   { src: fck65, alt: "Quarto e banheiro alto padrão - vizinho ao Lovina" },

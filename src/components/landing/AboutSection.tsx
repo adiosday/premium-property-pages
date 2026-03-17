@@ -16,7 +16,7 @@ const AboutSection = () => {
         <img
           src={ofirLogo}
           alt="OFIR Imobi PB"
-          className={`h-20 md:h-28 w-auto mx-auto mb-8 object-contain ${isVisible ? "animate-section-in" : "opacity-0"}`}
+          className={`h-12 md:h-17 w-auto mx-auto mb-8 object-contain ${isVisible ? "animate-section-in" : "opacity-0"}`}
         />
 
         <p className={`text-base md:text-lg font-body text-foreground/80 leading-relaxed mb-8 ${isVisible ? "animate-section-in animate-stagger-1" : "opacity-0"}`}>

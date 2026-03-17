@@ -12,7 +12,7 @@ const Header = () => {
         <img
           src={ofirLogo}
           alt="OFIR Imobi PB - Imóveis alto padrão Paraíba"
-          className="h-12 md:h-16 w-auto object-contain"
+          className="h-7 md:h-10 w-auto object-contain"
         />
         <Button variant="cta" size="sm" onClick={scrollToAgendamento} className="text-xs md:text-sm">
           AGENDAR VISITA
