@@ -2,7 +2,7 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Maximize2, LayoutGrid, MapPin, Key, X, ChevronLeft, ChevronRight } from "lucide-react";
 import { useState } from "react";
 import fck24 from "@/assets/fck-24.jpg";
-import fck56 from "@/assets/fck-56.jpg";
+import fck55 from "@/assets/fck-55.jpg";
 import fck57 from "@/assets/fck-57.jpg";
 import fck58 from "@/assets/fck-58.jpg";
 import fck65 from "@/assets/fck-65.jpg";
