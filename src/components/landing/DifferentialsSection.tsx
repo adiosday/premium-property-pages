@@ -47,14 +47,14 @@ const DifferentialsSection = () => {
           </h2>
 
           {/* Cards */}
-          <div className="grid sm:grid-cols-2 gap-6 md:gap-8 max-w-3xl mx-auto mb-16">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 md:gap-8 max-w-3xl mx-auto mb-10 sm:mb-16">
             {differentials.map((item, i) => (
               <div
                 key={i}
-                className={`flex items-start gap-4 p-6 bg-background rounded-lg shadow-sm border border-border/50 ${isVisible ? `animate-section-in animate-stagger-${i + 1}` : "opacity-0"}`}
+                className={`flex items-start gap-3 sm:gap-4 p-4 sm:p-6 bg-background rounded-lg shadow-sm border border-border/50 ${isVisible ? `animate-section-in animate-stagger-${i + 1}` : "opacity-0"}`}
               >
-                <item.icon className="w-6 h-6 text-accent shrink-0 mt-0.5" strokeWidth={1.5} />
-                <p className="text-sm md:text-base font-body text-foreground/85 leading-relaxed">{item.text}</p>
+                <item.icon className="w-5 h-5 sm:w-6 sm:h-6 text-accent shrink-0 mt-0.5" strokeWidth={1.5} />
+                <p className="text-xs sm:text-sm md:text-base font-body text-foreground/85 leading-relaxed">{item.text}</p>
               </div>
             ))}
           </div>
