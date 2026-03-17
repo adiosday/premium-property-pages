@@ -7,12 +7,12 @@ const slides = [
   {
     image: heroImage1,
     headline: "Ponta de Campina não é para todos",
-    subheadline: "Sua casa duplex de 3 quartos, a 100m do mar, é para você",
+    subheadline: "Sua casa duplex de 3 quartos, a 100m do mar, é um luxo para poucos",
   },
   {
     image: heroImage2,
-    headline: "O estilo de vida que muitos só vivem nas férias",
-    subheadline: "Sua casa duplex de 3 quartos, a 100m do mar, é para você",
+    headline: "O estilo de vida que só se vive nas férias",
+    subheadline: "Sua casa duplex de 3 quartos, a 100m do mar, é um luxo para poucos",
   },
 ];
 

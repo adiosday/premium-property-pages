@@ -9,10 +9,10 @@ import fck65 from "@/assets/fck-65.jpg";
 import breeze34 from "@/assets/breeze-34.jpg";
 
 const differentials = [
-  { icon: Maximize2, text: "Espaço de sobra: 100m² de área construída com acabamento premium." },
+  { icon: Maximize2, text: "Espaço e refinamento: 100m² de área privativa com acabamento de alto padrão." },
   { icon: LayoutGrid, text: "Planta Inteligente: 3 quartos amplos para acomodar toda a família com o máximo conforto." },
-  { icon: MapPin, text: "Localização Estratégica: A 100m do mar, em uma das áreas mais valorizadas e seguras da região." },
-  { icon: Key, text: "Prontas para morar: A chave está pronta para você." },
+  { icon: MapPin, text: "A 100 metros do mar: segurança, valorização e o privilégio de estar no ponto mais desejado da orla." },
+  { icon: Key, text: "Disponibilidade imediata: a chave do seu novo estilo de vida já está à sua espera." },
 ];
 
 const galleryImages = [
