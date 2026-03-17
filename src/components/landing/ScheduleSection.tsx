@@ -38,7 +38,7 @@ const ScheduleSection = () => {
         </p>
 
         {/* RD Station Form */}
-        <div className={`bg-background rounded-lg border border-border p-6 md:p-8 shadow-sm text-left ${isVisible ? "animate-section-in animate-stagger-2" : "opacity-0"}`}>
+        <div className={`bg-background rounded-lg border border-border p-4 sm:p-6 md:p-8 shadow-sm text-left ${isVisible ? "animate-section-in animate-stagger-2" : "opacity-0"}`}>
           <div role="main" id="breeze-residence-d663d2cd8bf6ebae3b0b"></div>
         </div>
       </div>

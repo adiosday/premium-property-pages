@@ -41,9 +41,9 @@ const AboutSection = () => {
 
         <Button
           variant="cta"
-          size="xl"
+          size="lg"
           onClick={scrollToAgendamento}
-          className={`${isVisible ? "animate-section-in animate-stagger-3" : "opacity-0"}`}
+          className={`text-xs sm:text-sm md:text-base px-5 sm:px-8 ${isVisible ? "animate-section-in animate-stagger-3" : "opacity-0"}`}
         >
           QUERO AGENDAR MINHA VISITA EXCLUSIVA
         </Button>

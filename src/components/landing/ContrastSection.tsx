@@ -29,7 +29,7 @@ const ContrastSection = () => {
               <img
                 src={fck51}
                 alt="Casa duplex 3 quartos Ponta de Campina - alto padrão PB pronto para morar"
-                className="w-full h-[300px] md:h-[450px] object-cover hover:scale-105 transition-transform duration-700"
+                className="w-full h-[240px] sm:h-[300px] md:h-[450px] object-cover hover:scale-105 transition-transform duration-700"
                 loading="lazy"
               />
             </div>

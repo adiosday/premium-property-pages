@@ -30,7 +30,7 @@ const ScarcitySection = () => {
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
             title="Localização Breeze FCK Residence - Ponta de Campina"
-            className="w-full h-64 md:h-80"
+            className="w-full h-48 sm:h-64 md:h-80"
           />
         </div>
       </div>

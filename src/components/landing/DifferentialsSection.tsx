@@ -70,7 +70,7 @@ const DifferentialsSection = () => {
                 <img
                   src={img.src}
                   alt={img.alt}
-                  className="w-full h-40 md:h-56 object-cover group-hover:scale-105 transition-transform duration-500"
+                  className="w-full h-32 sm:h-40 md:h-56 object-cover group-hover:scale-105 transition-transform duration-500"
                   loading="lazy"
                 />
               </button>
