@@ -60,7 +60,7 @@ const DifferentialsSection = () => {
           </div>
 
           {/* Gallery */}
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 sm:gap-3 md:gap-4">
             {galleryImages.map((img, i) => (
               <button
                 key={i}
