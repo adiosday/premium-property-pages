@@ -1,5 +1,5 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import houseInterior from "@/assets/house-interior.jpg";
+import fck51 from "@/assets/fck-51.jpg";
 
 const ContrastSection = () => {
   const { ref, isVisible } = useScrollAnimation();
@@ -18,16 +18,16 @@ const ContrastSection = () => {
             </p>
             <div className="border-l-2 border-accent pl-4 py-2">
               <p className="text-sm md:text-base font-body italic text-muted-foreground">
-                "Se você valoriza silêncio, privacidade e localização, vai entender em poucos minutos."
+                "Se você valoriza tranquilidade, segurança e localização privilegiada, vai entender em poucos minutos"
               </p>
             </div>
           </div>
 
-          {/* Image with parallax */}
+          {/* Image */}
           <div className={`overflow-hidden rounded-lg shadow-lg ${isVisible ? "animate-section-in animate-stagger-2" : "opacity-0"}`}>
             <div className="overflow-hidden">
               <img
-                src={houseInterior}
+                src={fck51}
                 alt="Casa duplex 3 quartos Ponta de Campina - alto padrão PB pronto para morar"
                 className="w-full h-[300px] md:h-[450px] object-cover hover:scale-105 transition-transform duration-700"
                 loading="lazy"

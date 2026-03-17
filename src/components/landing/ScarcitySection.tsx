@@ -16,29 +16,26 @@ const ScarcitySection = () => {
         </h2>
 
         <p className={`text-base md:text-lg font-body text-foreground/80 leading-relaxed mb-8 ${isVisible ? "animate-section-in animate-stagger-2" : "opacity-0"}`}>
-          Restam poucas unidades para quem compreende que localização é o único ativo que não se pode fabricar.
+          Para quem compreende que localização é o único ativo que não se pode fabricar.
         </p>
 
-        {/* Map placeholder */}
-        <div className={`bg-background border border-border rounded-lg h-64 md:h-80 flex items-center justify-center mb-8 ${isVisible ? "animate-section-in animate-stagger-3" : "opacity-0"}`}>
-          <div className="text-center text-muted-foreground font-body text-sm">
-            <MapPin className="w-8 h-8 mx-auto mb-2 text-accent" />
-            <p>Mapa interativo — embed Google Maps</p>
-            <p className="text-xs mt-1">Ponta de Campina, PB · A 100m do mar · Vizinho ao Lovina</p>
-          </div>
-        </div>
-
-        <div className={`border-l-2 border-accent pl-4 text-left max-w-md mx-auto ${isVisible ? "animate-section-in animate-stagger-4" : "opacity-0"}`}>
-          <p className="text-sm md:text-base font-body italic text-muted-foreground">
-            "Se você deixar para depois, provavelmente vai visitar… e descobrir que já foi."
-          </p>
+        {/* Google Maps embed */}
+        <div className={`rounded-lg overflow-hidden mb-8 ${isVisible ? "animate-section-in animate-stagger-3" : "opacity-0"}`}>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2800.029513575537!2d-34.83322398149439!3d-7.028118963064639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7acdf984d889397%3A0xe9487d0b20d45c84!2sBreeze%20FCK%20Residence!5e0!3m2!1spt-BR!2sbr!4v1773706610198!5m2!1spt-BR!2sbr"
+            width="100%"
+            height="350"
+            style={{ border: 0 }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            title="Localização Breeze FCK Residence - Ponta de Campina"
+            className="w-full h-64 md:h-80"
+          />
         </div>
       </div>
     </section>
   );
 };
-
-// Need MapPin import
-import { MapPin } from "lucide-react";
 
 export default ScarcitySection;
