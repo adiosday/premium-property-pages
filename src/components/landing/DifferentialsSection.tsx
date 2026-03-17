@@ -40,9 +40,9 @@ const DifferentialsSection = () => {
 
   return (
     <>
-      <section ref={ref} className="py-20 md:py-28 section-mist">
-        <div className="container">
-          <h2 className={`text-2xl sm:text-3xl md:text-4xl font-display font-bold text-foreground text-center mb-12 md:mb-16 ${isVisible ? "animate-section-in" : "opacity-0"}`}>
+      <section ref={ref} className="py-14 sm:py-20 md:py-28 section-mist">
+        <div className="container px-4 sm:px-6">
+          <h2 className={`text-xl sm:text-2xl md:text-4xl font-display font-bold text-foreground text-center mb-8 sm:mb-12 md:mb-16 ${isVisible ? "animate-section-in" : "opacity-0"}`}>
             Exclusividade e estética em 100m² de puro conforto
           </h2>
 

@@ -5,12 +5,12 @@ const ContrastSection = () => {
   const { ref, isVisible } = useScrollAnimation();
 
   return (
-    <section ref={ref} className="py-20 md:py-28 bg-background">
-      <div className="container">
-        <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
+    <section ref={ref} className="py-14 sm:py-20 md:py-28 bg-background">
+      <div className="container px-4 sm:px-6">
+        <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
           {/* Text */}
-          <div className={`space-y-6 ${isVisible ? "animate-section-in" : "opacity-0"}`}>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-bold text-foreground leading-tight">
+          <div className={`space-y-4 sm:space-y-6 ${isVisible ? "animate-section-in" : "opacity-0"}`}>
+            <h2 className="text-xl sm:text-2xl md:text-4xl font-display font-bold text-foreground leading-tight">
               Garanta o seu refúgio pronto para morar em Ponta de Campina
             </h2>
             <p className="text-base md:text-lg font-body text-foreground/80 leading-relaxed">
