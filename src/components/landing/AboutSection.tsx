@@ -11,8 +11,8 @@ const AboutSection = () => {
   };
 
   return (
-    <section ref={ref} className="py-20 md:py-28 bg-background">
-      <div className="container max-w-2xl text-center">
+    <section ref={ref} className="py-14 sm:py-20 md:py-28 bg-background">
+      <div className="container px-4 sm:px-6 max-w-2xl text-center">
         <img
           src={ofirLogo}
           alt="OFIR Imobi PB"
