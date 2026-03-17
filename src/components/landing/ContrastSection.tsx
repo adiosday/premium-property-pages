@@ -14,11 +14,11 @@ const ContrastSection = () => {
               Garanta o seu refúgio pronto para morar em Ponta de Campina
             </h2>
             <p className="text-base md:text-lg font-body text-foreground/80 leading-relaxed">
-              Com vizinhança selecionada, sua nova casa duplex de 100m² não é uma promessa de futuro; é uma realidade pronta para ser habitada hoje.
+              No mar mais paradisíaco de João Pessoa, sua nova casa duplex de 100m² não é uma promessa de futuro; é uma realidade pronta para ser habitada hoje.
             </p>
             <div className="border-l-2 border-accent pl-4 py-2">
               <p className="text-sm md:text-base font-body italic text-muted-foreground">
-                "Se você valoriza tranquilidade, segurança e localização privilegiada, vai entender em poucos minutos"
+                Se você valoriza tranquilidade, segurança e localização privilegiada, vai entender em poucos minutos
               </p>
             </div>
           </div>
