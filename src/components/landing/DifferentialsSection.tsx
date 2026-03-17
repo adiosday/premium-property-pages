@@ -1,9 +1,12 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import { Maximize2, LayoutGrid, MapPin, Key, X } from "lucide-react";
+import { Maximize2, LayoutGrid, MapPin, Key, X, ChevronLeft, ChevronRight } from "lucide-react";
 import { useState } from "react";
-import heroImage from "@/assets/hero-house.jpg";
-import houseInterior from "@/assets/house-interior.jpg";
-import houseExterior from "@/assets/house-exterior.jpg";
+import fck24 from "@/assets/fck-24.jpg";
+import fck56 from "@/assets/fck-56.jpg";
+import fck57 from "@/assets/fck-57.jpg";
+import fck58 from "@/assets/fck-58.jpg";
+import fck65 from "@/assets/fck-65.jpg";
+import breeze34 from "@/assets/breeze-34.jpg";
 
 const differentials = [
   { icon: Maximize2, text: "Espaço de sobra: 100m² de área construída com acabamento premium." },
@@ -13,14 +16,27 @@ const differentials = [
 ];
 
 const galleryImages = [
-  { src: heroImage, alt: "Casa duplex 3 quartos Ponta de Campina - interior premium" },
-  { src: houseInterior, alt: "Quarto alto padrão PB - pronto para morar 100m do mar" },
-  { src: houseExterior, alt: "Casa duplex exterior - vizinho ao Lovina Ponta de Campina" },
+  { src: fck24, alt: "Piscina casa duplex Ponta de Campina - alto padrão PB" },
+  { src: fck56, alt: "Sala de estar casa duplex 3 quartos - pronto para morar" },
+  { src: fck57, alt: "Living room alto padrão PB - 100m do mar" },
+  { src: fck58, alt: "Sala de jantar casa duplex Ponta de Campina" },
+  { src: fck65, alt: "Quarto e banheiro alto padrão - vizinho ao Lovina" },
+  { src: breeze34, alt: "Piscina noturna Breeze Residence Ponta de Campina" },
 ];
 
 const DifferentialsSection = () => {
   const { ref, isVisible } = useScrollAnimation();
   const [lightboxIdx, setLightboxIdx] = useState<number | null>(null);
+
+  const lightboxPrev = () => {
+    if (lightboxIdx === null) return;
+    setLightboxIdx((lightboxIdx - 1 + galleryImages.length) % galleryImages.length);
+  };
+
+  const lightboxNext = () => {
+    if (lightboxIdx === null) return;
+    setLightboxIdx((lightboxIdx + 1) % galleryImages.length);
+  };
 
   return (
     <>
@@ -59,10 +75,6 @@ const DifferentialsSection = () => {
                 />
               </button>
             ))}
-            {/* Placeholder for future images */}
-            <div className="hidden md:flex items-center justify-center rounded-lg border-2 border-dashed border-border h-56 text-muted-foreground text-sm font-body">
-              + Planta / Localização
-            </div>
           </div>
         </div>
       </section>
@@ -86,6 +98,20 @@ const DifferentialsSection = () => {
             aria-label="Fechar"
           >
             <X className="w-8 h-8" />
+          </button>
+          <button
+            onClick={(e) => { e.stopPropagation(); lightboxPrev(); }}
+            className="absolute left-4 text-background/80 hover:text-background transition-colors"
+            aria-label="Anterior"
+          >
+            <ChevronLeft className="w-10 h-10" />
+          </button>
+          <button
+            onClick={(e) => { e.stopPropagation(); lightboxNext(); }}
+            className="absolute right-4 text-background/80 hover:text-background transition-colors"
+            aria-label="Próxima"
+          >
+            <ChevronRight className="w-10 h-10" />
           </button>
           <img
             src={galleryImages[lightboxIdx].src}

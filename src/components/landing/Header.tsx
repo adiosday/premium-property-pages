@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import ofirLogo from "@/assets/ofir-logo.png";
+import ofirLogo from "@/assets/ofir-logo-new.jpg";
 
 const Header = () => {
   const scrollToAgendamento = () => {
@@ -12,7 +12,7 @@ const Header = () => {
         <img
           src={ofirLogo}
           alt="OFIR Imobi PB - Imóveis alto padrão Paraíba"
-          className="h-10 md:h-14 w-auto"
+          className="h-12 md:h-16 w-auto object-contain"
         />
         <Button variant="cta" size="sm" onClick={scrollToAgendamento} className="text-xs md:text-sm">
           AGENDAR VISITA
