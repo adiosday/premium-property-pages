@@ -28,9 +28,9 @@ const ScheduleSection = () => {
   }, []);
 
   return (
-    <section id="agendamento" ref={ref} className="py-20 md:py-28 section-mist">
-      <div className="container max-w-xl text-center">
-        <h2 className={`text-2xl sm:text-3xl md:text-4xl font-display font-bold text-foreground mb-4 ${isVisible ? "animate-section-in" : "opacity-0"}`}>
+    <section id="agendamento" ref={ref} className="py-14 sm:py-20 md:py-28 section-mist">
+      <div className="container px-4 sm:px-6 max-w-xl text-center">
+        <h2 className={`text-xl sm:text-2xl md:text-4xl font-display font-bold text-foreground mb-3 sm:mb-4 ${isVisible ? "animate-section-in" : "opacity-0"}`}>
           Agende sua visita à casa decorada
         </h2>
         <p className={`text-base font-body text-foreground/70 mb-10 ${isVisible ? "animate-section-in animate-stagger-1" : "opacity-0"}`}>
