@@ -18,7 +18,7 @@ const ContrastSection = () => {
             </p>
             <div className="border-l-2 border-accent pl-4 py-2">
               <p className="text-sm md:text-base font-body italic text-muted-foreground">
-                "Se você valoriza tranquilidade, segurança e localização privilegiada, vai entender em poucos minutos"
+                Se você valoriza tranquilidade, segurança e localização privilegiada, vai entender em poucos minutos
               </p>
             </div>
           </div>
