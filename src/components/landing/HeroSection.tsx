@@ -6,13 +6,13 @@ import heroImage2 from "@/assets/aerea-breeze4.jpg";
 const slides = [
   {
     image: heroImage1,
-    headline: "Ponta de Campina não é para todos",
-    subheadline: "Sua casa duplex de 3 quartos, a 100m do mar, é um luxo para poucos",
+    headline: "A praia mais exclusiva do litoral paraibano é para poucos",
+    subheadline: "Uma casa duplex de 3 quartos em Ponta de Campina, a 100m do mar, é para você",
   },
   {
     image: heroImage2,
     headline: "O estilo de vida que só se vive nas férias",
-    subheadline: "Sua casa duplex de 3 quartos, a 100m do mar, é um luxo para poucos",
+    subheadline: "Uma casa duplex de 3 quartos em Ponta de Campina, a 100m do mar, é para você",
   },
 ];
 
