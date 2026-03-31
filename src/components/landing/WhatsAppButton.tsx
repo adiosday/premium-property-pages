@@ -23,7 +23,7 @@ const WhatsAppButton = () => {
   const handleSubmit = () => {
     if (!validate()) return;
     const msg = encodeURIComponent(
-      `Olá! Meu nome é ${nome.trim()}, e-mail: ${email.trim()}, telefone: ${telefone.trim()}. Gostaria de mais informações sobre o Breeze Residence.`
+      `Olá, gostaria de mais informações sobre a casa duplex em Ponta de Campina`
     );
     window.open(`https://wa.me/5583987901544?text=${msg}`, "_blank");
     setOpen(false);
