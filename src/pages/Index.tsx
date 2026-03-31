@@ -5,11 +5,13 @@ import DifferentialsSection from "@/components/landing/DifferentialsSection";
 import ScarcitySection from "@/components/landing/ScarcitySection";
 import AboutSection from "@/components/landing/AboutSection";
 import ScheduleSection from "@/components/landing/ScheduleSection";
+import WhatsAppButton from "@/components/landing/WhatsAppButton";
 
 const Index = () => {
   return (
     <>
       <Header />
+      <WhatsAppButton />
       <main>
         <HeroSection />
         <ContrastSection />
