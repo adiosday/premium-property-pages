@@ -46,5 +46,23 @@
     <!-- End Google Tag Manager (noscript) -->
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var observer = new MutationObserver(function() {
+          var form = document.querySelector('form');
+          if (form && !form.dataset.gtmBound) {
+            form.dataset.gtmBound = 'true';
+            form.addEventListener('submit', function() {
+              window.dataLayer = window.dataLayer || [];
+              window.dataLayer.push({
+                'event': 'form_submit_conversion',
+                'conversion_value': 1
+              });
+            });
+          }
+        });
+        observer.observe(document.body, { childTree: true, subtree: true });
+      });
+    </script>
   </body>
 </html>
