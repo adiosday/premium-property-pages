@@ -47,23 +47,27 @@
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
     <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        var observer = new MutationObserver(function() {
-          var form = document.querySelector('form');
-          if (form && !form.dataset.gtmBound) {
-            form.dataset.gtmBound = 'true';
-            form.addEventListener('submit', function(event) {
-              window.dataLayer = window.dataLayer || [];
-              window.dataLayer.push({
-                'event': 'lead_conversion',
-                'conversion_category': 'form_submit'
-              });
-              console.log('Evento GTM enviado: form_submit');
+      function initFormTracking() {
+        var btn = document.getElementById('rd-button-mmtvfiu9');
+        if (btn) {
+          btn.addEventListener('click', function() {
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({
+              'event': 'form_submit_rd',
+              'conversion_category': 'lead_submit'
             });
-          }
+            console.log('✅ GTM: Submit RD detectado no botão!');
+          });
+          return true;
+        }
+        return false;
+      }
+      if (!initFormTracking()) {
+        var observer = new MutationObserver(function() {
+          if (initFormTracking()) observer.disconnect();
         });
         observer.observe(document.body, { childList: true, subtree: true });
-      });
+      }
     </script>
   </body>
 </html>
