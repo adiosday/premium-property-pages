@@ -52,12 +52,13 @@
           var form = document.querySelector('form');
           if (form && !form.dataset.gtmBound) {
             form.dataset.gtmBound = 'true';
-            form.addEventListener('submit', function() {
+            form.addEventListener('submit', function(event) {
               window.dataLayer = window.dataLayer || [];
               window.dataLayer.push({
-                'event': 'form_submit_conversion',
-                'conversion_value': 1
+                'event': 'lead_conversion',
+                'conversion_category': 'form_submit'
               });
+              console.log('Evento GTM enviado: form_submit');
             });
           }
         });
